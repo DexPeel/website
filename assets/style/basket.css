@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {font-family: 'Source Sans Pro', sans-serif;}
+
+/***************************************************/
+/***********************HEADER**********************/
+/***************************************************/
+
+.container_header{
+    width: 100%;
+    height: 160px;
+    background-color: rgb(255, 255, 255);
+}
+
+.logo_search_user {
+    display: grid;
+    grid-template-columns: 300px 600px 300px;
+    justify-content: center;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo_image {
+    position: absolute;
+    left: 40px;
+    top: 5px;
+    user-select: none;
+}
+
+.logo_slogan{
+    position: absolute;
+    right: 2px;
+    top: 30px;
+    font-family: 'Lobster', cursive;
+    font-size: 1.3em;
+    color: rgba(0, 0, 0, 0.63);
+    user-select: none;
+}
+
+ul.user_icons{user-select: none;}
+
+.search_input {
+    width: 500px;
+    height: 40px;
+    margin: 40px 0 0 80px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 2px rgb(197, 197, 197);
+    background-color: rgba(245, 245, 245, 0.323);
+    padding-left: 20px;
+    font-size: 1em;
+    background-image: url('/assets/image/header/search_icon.png');
+    background-repeat: no-repeat;
+    background-position: 460px;
+    background-size: 20px 20px;
+}
+
+input[type='search']::-webkit-search-decoration, 
+input[type='search']::-webkit-search-cancel-button, 
+input[type='search']::-webkit-search-results-button, 
+input[type='search']::-webkit-search-results-decoration {
+	display: none;
+}
+
+.user {
+    margin-left: 26px;
+    margin-top: 35px;
+}
+
+ul.user_icons li {
+    padding-left: 10px;
+    display: inline-block;
+}
+
+button.btn_user_icon {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    transition: .2s;
+}
+
+button.btn_user_icon:hover {
+    background-color: rgba(255, 94, 19, 0.801);
+    transition: all linear 400ms;
+}
+
+/***************************************************/
+/***********************HEADER**********************/
+/***************************************************/
+
+
+
+
+
+/***************************************************/
+/************************FOOTER*********************/
+/***************************************************/
+
+.footer_content {
+    min-width: 1519px;
+    height: auto;
+    margin-top: 50px;
+    background-color: rgb(41, 41, 41);
+    color: rgb(200, 200, 200); 
+}
+
+.footer_nav {
+    width: 100%;
+    height: 100px;
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+.footer_nav a{
+    color:rgb(200, 200, 200);
+    text-decoration: none;
+}
+
+ul.footer_list_nav {
+    text-align: center;
+    user-select: none;
+}
+
+ul.footer_list_nav li {
+    display: inline-block;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.footer_nav_item {
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+.footer_nav:after {
+    content:"";
+    display: block;
+    width: 1000px;
+    height: 1px;
+    background-color:rgb(106, 106, 106);
+    margin: 40px auto;
+}
+
+.subscribe_wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 400px 750px 200px;
+}
+
+.subscribe_wrapper h2{
+    padding-left: 50px;
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+}
+
+.subscribe_form {
+    padding-left: 30px;
+}
+
+.subscribe_text {
+    width: 420px;
+    height: 50px;
+    padding: 0 50px 0 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+}
+
+.subscribe_btn {
+    width: 150px;
+    height: 50px;
+    margin-left: 15px;
+    padding-bottom: 2px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(255, 81, 1);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.subscribe_btn:hover {
+    background-color: rgb(255, 109, 41);
+}
+
+.social_networks {
+    padding-left: 80px;
+    padding-top: 5px;
+}
+
+.social_network_items {
+    display: flex;
+}
+
+.s_n_item {
+    margin: 0 5px 0 5px;
+}
+
+.other_footer_content {
+    padding: 60px 0 50px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.items_other_footer_content h3 {
+    padding-bottom: 10px;
+    color: white;
+}
+
+ul.item_other_footer_content li{
+    padding-top: 15px;
+    list-style: none;
+}
+
+.item_other_footer_content a {
+    text-decoration: none;
+    color: rgb(200, 200, 200);
+}
+
+.item_other_footer_content a:hover {
+    transition: 200ms;
+    color: rgb(234, 234, 234);
+}
+
+/***************************************************/
+/************************FOOTER*********************/
+/***************************************************/

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,23 +16,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <title>Милый дом - интернет магазин мебли и товаров для дома</title>
 </head>
+
 <body>
     <header>
         <div class="container_header">
             <div class="logo_search_user">
                 <div class="logo">
                     <div class="logo_image">
-                        <a href="#"><img src="assets/image/header/logo.png" alt="logo.png" width="100"height="100"></a>
+                        <a href="#"><img src="assets/image/header/logo.png" alt="logo.png" width="100" height="100"></a>
                     </div>
-                    <div class="logo_slogan"><p>Ваш дом - <br>милый дом</p></div>
+                    <div class="logo_slogan">
+                        <p>Ваш дом - <br>милый дом</p>
+                    </div>
                 </div>
                 <input type="search" value placeholder="Поиск" id="search_input" class="search_input search_icon">
                 <div class="user">
-                    <ul class = "user_icons">
-                        <li class="icon support"><button class="btn_user_icon"><img src="assets/image/header/support_icon.png" alt="" width="30" height="30"></button></li>
-                        <li class="icon profile"><button class="btn_user_icon"><img src="assets/image/header/profile_icon.png" alt="" width="30" height="30"></button></li>
-                        <li class="icon favorites"><button class="btn_user_icon"><img src="assets/image/header/favorites_icon.png" alt="" width="30" height="30"></button></li>
-                        <li class="icon basket"><button class="btn_user_icon"><img src="assets/image/header/basket_icon.png" alt="" width="30" height="30"></button></li>
+                    <ul class="user_icons">
+                        <li class="icon support">
+                            <button class="btn_user_icon">
+                                <img src="assets/image/header/support_icon.png" alt="" width="30" height="30">
+                            </button>
+                        </li>
+                        <li class="icon profile">
+                            <button class="btn_user_icon">
+                                <img src="assets/image/header/profile_icon.png" alt="" width="30" height="30">
+                            </button>
+                        </li>
+                        <li class="icon favorites">
+                            <button class="btn_user_icon">
+                                <img src="assets/image/header/favorites_icon.png" alt="" width="30" height="30">
+                            </button>
+                        </li>
+                        <li class="icon basket">
+                            <button class="btn_user_icon">
+                                <img class="btn_user_icon" src="assets/image/header/basket_icon.png" alt="" width="30"
+                                    height="30">
+                                <span class="value_basket">9</span>
+                            </button>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -58,6 +80,52 @@
         </div>
     </header>
 
+    <div class="basket_menu">
+        <div class="basket_menu_name_items">
+            <div class="basket_menu_number">Номер</div>
+            <div class="basket_menu_image">Вид</div>
+            <div class="basket_menu_name">Название</div>
+            <div class="basket_menu_amount_text">Количество</div>
+            <div class="basket_menu_price">Цена</div>
+            <div class="basket_menu_delete">
+            </div>
+        </div>
+        <div class="basket_menu_items">
+            <div class="basket_menu_item">
+                <div class="basket_menu_number">1.</div>
+                <div class="basket_menu_image">
+                    <img src="https://placehold.jp/c7c7c7/8a8a8a/250x150.jpg" alt="">
+                </div>
+                <div class="basket_menu_name">Холодильник Samsung</div>
+                <div class="basket_menu_change_amount">
+                    <input class="change_amount_plus" type="button" value="+">
+                    <div class="basket_menu_amount">1</div>
+                    <input class="change_amount_minus" type="button" value="&#8212">
+                </div>
+                <div class="basket_menu_price">30000</div>
+                <div class="basket_menu_delete">
+                    <input class="delete" type="button" value="&#10006;">
+                </div>
+            </div>
+            <div class="basket_menu_item">
+                <div class="basket_menu_number">1.</div>
+                <div class="basket_menu_image">
+                    <img src="https://placehold.jp/c7c7c7/8a8a8a/250x150.jpg" alt="">
+                </div>
+                <div class="basket_menu_name">Холодильник Samsung</div>
+                <div class="basket_menu_change_amount">
+                    <input class="change_amount_plus" type="button" value="+">
+                    <div class="basket_menu_amount">1</div>
+                    <input class="change_amount_minus" type="button" value="&#8212">
+                </div>
+                <div class="basket_menu_price">30000</div>
+                <div class="basket_menu_delete">
+                    <input class="delete" type="button" value="&#10006;">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="content_info">
         <div class="slideShow_container">
             <div class="slideShow">
@@ -81,17 +149,20 @@
     <div class="content">
         <div class="info_header">
             <div class="info_header_tab select_tab">Успейте купить</div>
-            <div class="info_header_tab ">Готовьте с изюминкой</h2></div>
+            <div class="info_header_tab ">Готовьте с изюминкой</h2>
+            </div>
             <div class="info_header_tab">Да прибудет с вами свет</div>
             <div class="info_header_tab">Бездонное хранилище</div>
-            <div class="info_header_tab">Чистота - залог успеха</h2></div>
+            <div class="info_header_tab">Чистота - залог успеха</h2>
+            </div>
         </div>
 
         <section class="info_tabcontent">
             <div class="products">
                 <div class="item">
                     <div class="item_image">
-                        <img src="https://placehold.jp/8a8a8a/c7c7c7/250x150.jpg" alt="item_image">
+                        <img src="https://placehold.jp/8a8a8a/c7c7c7/250x150.jpg" alt="item_image" height="100%"
+                            width="100%">
                     </div>
                     <div class="item_content">
                         <div class="item_price">
@@ -99,7 +170,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name" id="item_name">Холодильник Samsung</div>
                         <div class="item_rating">
@@ -109,16 +180,9 @@
                             <a href="#">23 отзыва</a>
                         </div>
                         <div class="item_footer">
-                            <div class="item_details">
-                                <a href="#">Подробнее</a>
-                            </div>
-                            <div class="btn_item_details">
-                                <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
-                                </button>
-                            </div>
+                            <button class="btn_item_details">Добавить в корзину</button>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_image">
@@ -130,7 +194,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung 2</div>
                         <div class="item_rating">
@@ -140,16 +204,9 @@
                             <a href="#">23 отзыва</a>
                         </div>
                         <div class="item_footer">
-                            <div class="item_details">
-                                <a href="#">Подробнее</a>
-                            </div>
-                            <div class="btn_item_details">
-                                <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
-                                </button>
-                            </div>
+                            <button class="btn_item_details">Добавить в корзину</button>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_image">
@@ -161,7 +218,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung
                         </div>
@@ -172,16 +229,9 @@
                             <a href="#">23 отзыва</a>
                         </div>
                         <div class="item_footer">
-                            <div class="item_details">
-                                <a href="#">Подробнее</a>
-                            </div>
-                            <div class="btn_item_details">
-                                <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
-                                </button>
-                            </div>
+                            <button class="btn_item_details">Добавить в корзину</button>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_image">
@@ -193,7 +243,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung 4</div>
                         <div class="item_rating">
@@ -203,16 +253,9 @@
                             <a href="#">23 отзыва</a>
                         </div>
                         <div class="item_footer">
-                            <div class="item_details">
-                                <a href="#">Подробнее</a>
-                            </div>
-                            <div class="btn_item_details">
-                                <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
-                                </button>
-                            </div>
+                            <button class="btn_item_details">Добавить в корзину</button>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_image">
@@ -224,7 +267,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung 5</div>
                         <div class="item_rating">
@@ -234,16 +277,9 @@
                             <a href="#">23 отзыва</a>
                         </div>
                         <div class="item_footer">
-                            <div class="item_details">
-                                <a href="#">Подробнее</a>
-                            </div>
-                            <div class="btn_item_details">
-                                <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
-                                </button>
-                            </div>
+                            <button class="btn_item_details">Добавить в корзину</button>
                         </div>
-                    </div>    
+                    </div>
                 </div>
             </div>
         </section>
@@ -260,7 +296,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung</div>
                         <div class="item_rating">
@@ -275,11 +311,12 @@
                             </div>
                             <div class="btn_item_details">
                                 <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
+                                    <img class="ib" src="assets/image/header/basket_icon.png" alt="icon_basket"
+                                        width="30px" height="30px">
                                 </button>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_image">
@@ -291,7 +328,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung</div>
                         <div class="item_rating">
@@ -306,11 +343,12 @@
                             </div>
                             <div class="btn_item_details">
                                 <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
+                                    <img class="ib" src="assets/image/header/basket_icon.png" alt="icon_basket"
+                                        width="30px" height="30px">
                                 </button>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_image">
@@ -322,7 +360,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung</div>
                         <div class="item_rating">
@@ -337,11 +375,12 @@
                             </div>
                             <div class="btn_item_details">
                                 <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
+                                    <img class="ib" src="assets/image/header/basket_icon.png" alt="icon_basket"
+                                        width="30px" height="30px">
                                 </button>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_image">
@@ -353,7 +392,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung</div>
                         <div class="item_rating">
@@ -368,11 +407,12 @@
                             </div>
                             <div class="btn_item_details">
                                 <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
+                                    <img class="ib" src="assets/image/header/basket_icon.png" alt="icon_basket"
+                                        width="30px" height="30px">
                                 </button>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_image">
@@ -384,7 +424,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung</div>
                         <div class="item_rating">
@@ -399,11 +439,12 @@
                             </div>
                             <div class="btn_item_details">
                                 <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
+                                    <img class="ib" src="assets/image/header/basket_icon.png" alt="icon_basket"
+                                        width="30px" height="30px">
                                 </button>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
             </div>
         </section>
@@ -420,7 +461,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung</div>
                         <div class="item_rating">
@@ -435,11 +476,12 @@
                             </div>
                             <div class="btn_item_details">
                                 <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
+                                    <img class="ib" src="assets/image/header/basket_icon.png" alt="icon_basket"
+                                        width="30px" height="30px">
                                 </button>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_image">
@@ -451,7 +493,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung</div>
                         <div class="item_rating">
@@ -466,11 +508,12 @@
                             </div>
                             <div class="btn_item_details">
                                 <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
+                                    <img class="ib" src="assets/image/header/basket_icon.png" alt="icon_basket"
+                                        width="30px" height="30px">
                                 </button>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_image">
@@ -482,7 +525,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung</div>
                         <div class="item_rating">
@@ -497,11 +540,12 @@
                             </div>
                             <div class="btn_item_details">
                                 <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
+                                    <img class="ib" src="assets/image/header/basket_icon.png" alt="icon_basket"
+                                        width="30px" height="30px">
                                 </button>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_image">
@@ -513,7 +557,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung</div>
                         <div class="item_rating">
@@ -528,11 +572,12 @@
                             </div>
                             <div class="btn_item_details">
                                 <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
+                                    <img class="ib" src="assets/image/header/basket_icon.png" alt="icon_basket"
+                                        width="30px" height="30px">
                                 </button>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_image">
@@ -544,7 +589,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung</div>
                         <div class="item_rating">
@@ -559,11 +604,12 @@
                             </div>
                             <div class="btn_item_details">
                                 <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
+                                    <img class="ib" src="assets/image/header/basket_icon.png" alt="icon_basket"
+                                        width="30px" height="30px">
                                 </button>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
             </div>
         </section>
@@ -580,7 +626,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung</div>
                         <div class="item_rating">
@@ -595,11 +641,12 @@
                             </div>
                             <div class="btn_item_details">
                                 <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
+                                    <img class="ib" src="assets/image/header/basket_icon.png" alt="icon_basket"
+                                        width="30px" height="30px">
                                 </button>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_image">
@@ -611,7 +658,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung</div>
                         <div class="item_rating">
@@ -626,11 +673,12 @@
                             </div>
                             <div class="btn_item_details">
                                 <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
+                                    <img class="ib" src="assets/image/header/basket_icon.png" alt="icon_basket"
+                                        width="30px" height="30px">
                                 </button>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_image">
@@ -642,7 +690,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung</div>
                         <div class="item_rating">
@@ -657,11 +705,12 @@
                             </div>
                             <div class="btn_item_details">
                                 <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
+                                    <img class="ib" src="assets/image/header/basket_icon.png" alt="icon_basket"
+                                        width="30px" height="30px">
                                 </button>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_image">
@@ -673,7 +722,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung</div>
                         <div class="item_rating">
@@ -688,11 +737,12 @@
                             </div>
                             <div class="btn_item_details">
                                 <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
+                                    <img class="ib" src="assets/image/header/basket_icon.png" alt="icon_basket"
+                                        width="30px" height="30px">
                                 </button>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_image">
@@ -704,7 +754,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung</div>
                         <div class="item_rating">
@@ -719,11 +769,12 @@
                             </div>
                             <div class="btn_item_details">
                                 <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
+                                    <img class="ib" src="assets/image/header/basket_icon.png" alt="icon_basket"
+                                        width="30px" height="30px">
                                 </button>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
             </div>
         </section>
@@ -740,7 +791,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung</div>
                         <div class="item_rating">
@@ -755,11 +806,12 @@
                             </div>
                             <div class="btn_item_details">
                                 <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
+                                    <img class="ib" src="assets/image/header/basket_icon.png" alt="icon_basket"
+                                        width="30px" height="30px">
                                 </button>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_image">
@@ -771,7 +823,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung</div>
                         <div class="item_rating">
@@ -786,11 +838,12 @@
                             </div>
                             <div class="btn_item_details">
                                 <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
+                                    <img class="ib" src="assets/image/header/basket_icon.png" alt="icon_basket"
+                                        width="30px" height="30px">
                                 </button>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_image">
@@ -802,7 +855,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung</div>
                         <div class="item_rating">
@@ -817,11 +870,12 @@
                             </div>
                             <div class="btn_item_details">
                                 <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
+                                    <img class="ib" src="assets/image/header/basket_icon.png" alt="icon_basket"
+                                        width="30px" height="30px">
                                 </button>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_image">
@@ -833,7 +887,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung</div>
                         <div class="item_rating">
@@ -848,11 +902,12 @@
                             </div>
                             <div class="btn_item_details">
                                 <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
+                                    <img class="ib" src="assets/image/header/basket_icon.png" alt="icon_basket"
+                                        width="30px" height="30px">
                                 </button>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_image">
@@ -864,7 +919,7 @@
                                 <span class="item_discount">-50%</span>
                                 <span class="item_oldPrise">30 000&#8381</span>
                             </div>
-                            <p>15 000&#8381</p>
+                            <p class="price">15 000&#8381</p>
                         </div>
                         <div class="item_name">Холодильник Samsung</div>
                         <div class="item_rating">
@@ -879,15 +934,16 @@
                             </div>
                             <div class="btn_item_details">
                                 <button class="item_basket">
-                                    <img src="assets/image/header/basket_icon.png" alt="icon_basket" width="30px" height="30px">
+                                    <img class="ib" src="assets/image/header/basket_icon.png" alt="icon_basket"
+                                        width="30px" height="30px">
                                 </button>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
             </div>
         </section>
-        
+
     </div>
 
     <footer>
@@ -905,24 +961,28 @@
                 </ul>
             </div>
             <div class="subscribe_wrapper">
-                    <h2>Получите сертификат на 1000 руб в подарок за подписку</h2>
+                <h2>Получите сертификат на 1000 руб в подарок за подписку</h2>
                 <form class="subscribe_form">
-                    <input class="subscribe_text" type="text" value placeholder="Введите ваш e-mail" >
-                    <input class = "subscribe_btn"type="button" value="Подписаться">
+                    <input class="subscribe_text" type="text" value placeholder="Введите ваш e-mail">
+                    <input class="subscribe_btn" type="button" value="Подписаться">
                 </form>
                 <div class="social_networks">
                     <div class="social_network_items">
                         <div class="s_n_item">
-                            <a href="#"><img src="assets/image/footer/vk_icon.png" alt="VKontakte" width="40px" height="40px"></a>
+                            <a href="#"><img src="assets/image/footer/vk_icon.png" alt="VKontakte" width="40px"
+                                    height="40px"></a>
                         </div>
                         <div class="s_n_item">
-                            <a href="#"><img src="assets/image/footer/tg_icon.png" alt="Telegram" width="40px" height="40px"></a>
+                            <a href="#"><img src="assets/image/footer/tg_icon.png" alt="Telegram" width="40px"
+                                    height="40px"></a>
                         </div>
                         <div class="s_n_item">
-                            <a href="#"><img src="assets/image/footer/wa_icon.png" alt="WhatsApp" width="40px" height="40px"></a>
+                            <a href="#"><img src="assets/image/footer/wa_icon.png" alt="WhatsApp" width="40px"
+                                    height="40px"></a>
                         </div>
                         <div class="s_n_item">
-                            <a href="#"><img src="assets/image/footer/vb_icon.png" alt="Viber" width="40px" height="40px"></a>
+                            <a href="#"><img src="assets/image/footer/vb_icon.png" alt="Viber" width="40px"
+                                    height="40px"></a>
                         </div>
 
                     </div>
@@ -937,7 +997,7 @@
                         <li><a href="#">Оплата частями</a></li>
                         <li><a href="#">Возврат и обмен</a></li>
                         <li><a href="#">Консультации</a></li>
-                    </ul>                       
+                    </ul>
                 </section>
                 <section class="items_other_footer_content">
                     <h3>Планирование мебели</h3>
@@ -971,5 +1031,7 @@
     </footer>
     <script src="assets/script/slide_show.js"></script>
     <script src="assets/script/tab_products.js"></script>
+    <script src="assets/script/basket.js"></script>
 </body>
+
 </html>
