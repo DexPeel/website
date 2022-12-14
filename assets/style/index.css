@@ -155,12 +155,21 @@ ul.nav_items li {
 /***************************************************/
 
 .basket_menu {
+    display: none;
     border-radius: 20px;
     border: solid 2px rgba(0, 0, 0, 0.119);
     background-color: rgb(255, 255, 255);
     width: 1350px;
-    height: 600px;
+    min-height: 600px;
     margin: 50px auto;
+}
+
+.close_menu_basket {
+    font-size: 25px;
+}
+
+.close_menu_basket:hover {
+    color: rgb(182, 0, 0);
 }
 
 .basket_menu_name_items {
@@ -550,19 +559,23 @@ ul.footer_list_nav li {
 }
 
 .subscribe_wrapper {
-    width: 100%;
     display: grid;
-    grid-template-columns: 400px 750px 200px;
+    grid-template-columns: 300px 700px 200px;
+    margin: 30px;
+    justify-content: center;
+    align-items:center;
 }
 
 .subscribe_wrapper h2{
-    padding-left: 50px;
     font-size: 20px;
     color:rgb(255, 255, 255);
 }
 
 .subscribe_form {
-    padding-left: 30px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 15px;
 }
 
 .subscribe_text {
@@ -577,7 +590,6 @@ ul.footer_list_nav li {
 .subscribe_btn {
     width: 150px;
     height: 50px;
-    margin-left: 15px;
     padding-bottom: 2px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
@@ -593,7 +605,9 @@ ul.footer_list_nav li {
 }
 
 .social_networks {
-    padding-left: 80px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
     padding-top: 5px;
 }
 
